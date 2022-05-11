@@ -1,4 +1,4 @@
-# DevOps
+# DevOps   c
 # USE CASE-2  Blue Green Deployment
 ---------------------------------------
 Step 1. Resource creation
