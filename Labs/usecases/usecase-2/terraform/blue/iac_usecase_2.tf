@@ -34,7 +34,7 @@ variable "AMI" {
 
 resource "aws_iam_instance_profile" "rm_iam_profile" {
   name = "rm_iam_profile_uc2"
-  role = "EC2JenkinsRole"
+  role = "EC2DefaultRole"
 }
 
 variable "EC2_TYPE" {
