@@ -4,7 +4,7 @@ provider "aws" {
 
 variable "VPC" {
   type = string
-  default = "vpc-ef705e95"
+  default = "vpc-07f7183299bc753ba"
   description = "VPC in which we need to create resources"
 }
 
@@ -16,24 +16,24 @@ variable "CIDR" {
 
 variable "SUBNET" {
   type = string
-  default = "subnet-8c41e3c1"
+  default = "subnet-06e17f4d97f0e34f3"
   description = "Public subnet for deploying the application"
 }
 
 variable "KEYNAME" {
   type = string
-  default = "RisingMinerva-EAST-KeyPair"
+  default = "myPrivateKey"
   description = "Key name for the EC2"
 }
 
 variable "AMI" {
   type = string
-  default = "ami-00dc79254d0461090"
+  default = "ami-0022f774911c1d690"
   description = "AMI image id for EC2 instance to bake the EC2"
 }
 
 resource "aws_iam_instance_profile" "rm_iam_profile" {
-  name = "rm_iam_profile"
+  name = "rm_iam_profile_uc2"
   role = "EC2JenkinsRole"
 }
 
@@ -44,7 +44,7 @@ variable "EC2_TYPE" {
 
 variable "S3_PATH" {
   type = string
-  default = "s3://risingminervacodebase-rchaturvedi/devops/app"
+  default = "s3://jenkins-usecase2/devops/app"
   description = "Version to be released"
 }
 
