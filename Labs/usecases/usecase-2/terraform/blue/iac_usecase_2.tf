@@ -70,6 +70,10 @@ resource "aws_security_group" "basic_http" {
       prefix_list_ids = []
       self = true
     }
+    lifecycle 
+    {
+    	create_before_destroy = true
+    }
   ]
 
   egress = [
