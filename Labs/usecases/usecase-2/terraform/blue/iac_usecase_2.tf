@@ -58,10 +58,6 @@ resource "aws_security_group" "basic_http" {
   name = "sg_flask-usecase2-blue"
   description = "Web Security Group for HTTP"
   vpc_id =  var.VPC
-  lifecycle 
-    {
-    	create_before_destroy = true
-    }
   ingress = [
     {
       description = "Allow HTTP Traffic access"
