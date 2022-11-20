@@ -2,7 +2,7 @@
 def S3_BUCKET = "s3://jenkins-webhooks/"
 def S3_BINARY_PATH = "devops/app/"
 def S3_TERRAFORM_PATH = "devops/terraform/"
-
+// commenyt
 // Pipeline definition
 pipeline {
   agent any
